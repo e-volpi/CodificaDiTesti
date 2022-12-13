@@ -1,0 +1,1561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+<!-- Prologo -->
+
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+  <teiHeader>
+    <!-- intestazione -->
+
+    <fileDesc>
+      <!-- il fileDesc contiene una descrizione bibliografica sia di dati relativi al documento elettronico
+      sia della fonte originaria che stiamo codificando -->
+      <titleStmt>
+        <!-- sezione per la codifica del titolo dell'edizione digitale -->
+        <title xml:lang="fr"> Trois premières conférences à l'Université </title> <!-- titolo originale in lingua francese -->
+        <title xml:lang="it"> Le prime tre conferenze all'Università </title> <!-- titolo traduzione in lingua italiana-->
+        <author ref="FDS"> Ferdinand De Saussure </author> <!-- autore -->
+        <respStmt>
+          <!-- contiene i responsabili del contenuto -->
+          <resp> Traduzione a cura di: </resp>
+          <name ref="EF"> Emanuele Fadda </name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <!-- informazioni relative a un'edizione del testo -->
+        <edition>
+          Edizione Digitale -
+          <date when="09-2022"> dicembre 2022 </date>
+        </edition>
+        <respStmt>
+          <resp> Progetto coordinato da: </resp>
+          <name xml:id="AMDG"> Angelo Mario Del Grosso </name>
+        </respStmt>
+        <respStmt>
+          <resp> Codifica a cura di: </resp>
+          <name xml:id="DL"> Diletta Lelli </name>
+          <name xml:id="EV"> Elena Volpi </name>
+        </respStmt>
+      </editionStmt>
+
+      <publicationStmt>
+        <!-- sezione per la codifica dei dati di diffusione e distribuzione dell'edizione -->
+        <publisher> Università di Pisa </publisher>
+        <pubPlace> Pisa </pubPlace>
+        <availability status="free">
+          <p> opera ad accesso libero </p>
+        </availability>
+        <date when="2022"> 2022 </date>
+      </publicationStmt>
+
+      <sourceDesc>
+        <!-- sezione per la descrizione della fonte primaria -->
+        <msDesc>
+          <!-- descrizione del manoscritto -->
+          <msIdentifier>
+            <!-- identificatore del manoscritto, contiene le informazioni necessarie per identificarlo -->
+            <country key="CH">Switzerland</country>
+            <settlement>Ginevra</settlement>
+            <repository role="library">
+              Biblioteca di
+              <placeName ref="#ginevra">Ginevra</placeName>
+            </repository>
+            <idno>BGE Ms. fr. 3951/1.1-3</idno>
+          </msIdentifier>
+          <msContents>
+            <!-- contenuto del manoscritto -->
+            <msItem>
+              <author xml:lang="fr">
+                <persName ref="FDS">Ferdinand De Saussure</persName> <!--persName viene usato per indicare un nome personale -->
+              </author>
+              <title xml:lang="fr">
+                Trois premières conférences à l'Université (cours d'ouverture,
+                <date when="11-1981">Novembre 1891</date>
+                )
+              </title>
+            </msItem>
+          </msContents>
+          <physDesc>
+            <!-- descrizione fisica del manoscritto -->
+            <objectDesc form="folio">
+              <!-- objectDesc fornisce una descrizione delle componenti fisiche che costituiscono l'oggetto descritto
+              l'attributo form indica la forma fisica del documento, in questo caso un foglio -->
+              <supportDesc material="paper">
+                <!-- supportDesc mi da una descrizione del supporto, ovvero raggruppa gli elementi che descrivono il supporto fisico
+                della parte scritta di un manoscritto; l'attributo materia ci da un'informazione riguardante il materiale di cui è fatto il supporto, in questo caso carta -->
+                <support> fogli di carta </support>
+                <extent> il manoscritto è formato da 30 + 15 + 22 pagine + 1 foglietto </extent>
+                <condition> il manoscritto risulta essere abbastanza leggibile: le pagine non presentano evidenti danni e sono complessivamente in buono stato </condition>
+              </supportDesc>
+              <layoutDesc>
+                <!-- layoutDesc ci da una descrizione dell'impaginazione del manoscritto -->
+                <layout columns="1" ruledLines="20 30">
+                  <!--columns specifica il numero di colonne per pagina; ruledLines specifica il numero di righe per colonna -->
+                  <p> le pagine hanno in media tra le 20 e le 30 righe, inoltre presentano molte note a margine e al di sopra del testo </p>
+                </layout>
+              </layoutDesc>
+            </objectDesc>
+            <handDesc hands="1">
+              <!-- contiene una descrizione dei diversi tipi di scrittura usati in un manoscritto -->
+              <p> il testo è stato scritto interamente dalla mano dell'autore. </p>
+            </handDesc>
+            <typeDesc>
+              <!-- contiene una descrizione dei caratteri o altri aspettidel manoscritto stampato -->
+              <p> trattandosi di appunti scritti a mano a volte risultano di difficile comprensione. Presentano inoltre diverse cancellature, sottolineature e aggiunte. </p>
+            </typeDesc>
+          </physDesc>
+          <history>
+            <!-- raggruppa elementi che contengono la storia del manoscritto -->
+            <origin notAfter="11-1891">
+              <!-- origin ci da informazioni riguardanti l'origine del manoscritto; notAfter specifica l'ultima data possibile per quel determinato evento -->
+              <p>
+                Si tratta di appunti per le prime conferenze all'Università di
+                <placeName ref="#ginevra">Ginevra</placeName>
+                , in parte utilizzati per le prime lezioni
+                <!-- placeName = nome luogo -->
+                del corso di
+                <foreign xml:lang="fr">Phonétique du grec et du latin</foreign>
+                .
+                <!-- foreign identifica una parola/frase come nonappartenente alla lingua in uci stiamo scrivendo -->
+                Questi appunti erano probabilmente destinati alla pubblicazione di una brochure.
+              </p>
+            </origin>
+            <acquisition>
+              <!--contiene informazioni relative al processo di acquisizione di un manoscritto -->
+              <p>
+                Il testo originale venne in seguito acquisito dalla Biblioteca di
+                <placeName ref="#ginevra">Ginevra</placeName>
+                .
+              </p>
+            </acquisition>
+          </history>
+        </msDesc>
+      </sourceDesc>
+
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <!-- descrive l'uso della lingua -->
+        <language ident="fr">Francese</language>
+      </langUsage>
+      <textDesc>
+        <!-- fornisce una descrizione del testo -->
+        <channel mode="ws" /> <!-- channel descrive il mezzo o canale attraverso cui un testo è trasmesso o vissuto;
+        l'attributo mode specifica il modo del canale rispetto a parlato e scritto: in questo caso "ws", ovvero scritto per essere parlato -->
+        <constitution type="single" /> <!-- constituiton descrive la composizione interna;
+        l'attributo type indica come era costituito il testo: in questo caso "single", ovvero un unico testo completo -->
+        <derivation type="original" /> <!-- derivation descrive la natura e la portata dell'originalità di questo testo: in questo caso si tratta di un testo originale -->
+        <domain type="education" /> <!--domain descrive il più importante contesto per il quale è stato creato il manoscritto: in questo caso si tratta di un contesto scolastico -->
+        <factuality type="fact" /> <!-- factiality indica se e quanto il testo può essere considerato fantasioso; in questo caso è da considerarsi interamente fattuale e informativo -->
+        <interaction type="partial" active="singular" passive="group" /> <!-- interaction descrive la natura, la centralità e il grado di ogni interazione fra coloro che producono e coloro che sperimentano il testo;
+        in questo caso abbiamo type="partial", quindi è prevista qualche interazione perziale;
+        active="singular", quindi abbiamo un singolo partecipante attivo;
+        passive="group", quindi il testo è estinato ad un gruppo di partecipanti indefinito ma limitato-->
+        <preparedness type="draft" /> <!-- preparedness descrive quanto un testo possa essere stato preparao o spontaneo, in questo caso si tratta di una brutta copia-->
+        <purpose type="inform" degree="high" /> <!-- purpose indica lo scopo comunicativo del testo, in questo caso si tratta di un testo informativo/educativo, con un'alta certezza -->
+      </textDesc>
+      <settingDesc>
+        <!-- descrive le impostazioni all'interno delle quali avviene un'interazione linguistica -->
+        <setting>
+          <name>
+            Testi registrati nella Biblioteca di
+            <placeName>Ginevra</placeName>
+            ,
+            <country>Svizzera</country>
+            .
+          </name>
+          <time>
+            <date when="11-1891">Novembre 1891</date>
+          </time>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+  </teiHeader>
+  <facsimile>
+    <!-- Prolusioni 2, Pagina 11a -->
+    <surface n="1" xml:id="P11aIntera">
+      <graphic url='ms_fr_03951_01_2_p011a_mili (1).png' width='2271.33334px' height='3487.33334px' />
+      <zone ulx="447" uly="187" lrx="2207" lry="267" xml:id="P11a_R1" />
+      <zone ulx="388" uly="301" lrx="2193" lry="371" xml:id="P11a_R2" />
+      <zone ulx="401" uly="386" lrx="2232" lry="513" xml:id="P11a_R3" />
+      <zone ulx="400" uly="570" lrx="2220" lry="607" xml:id="P11a_R4" />
+      <zone ulx="399" uly="651" lrx="2239" lry="741" xml:id="P11a_R5" />
+      <zone ulx="379" uly="742" lrx="2215" lry="862" xml:id="P11a_R6" />
+      <zone ulx="368" uly="888" lrx="2177" lry="930" xml:id="P11a_R7" />
+      <zone ulx="368" uly="980" lrx="2201" lry="1023" xml:id="P11a_R8" />
+      <zone ulx="373" uly="1079" lrx="2183" lry="1138" xml:id="P11a_R9" />
+      <zone ulx="380" uly="1227" lrx="2176" lry="1274" xml:id="P11a_R10" />
+      <zone ulx="40" uly="1328" lrx="2175" lry="1364" xml:id="P11a_R11" />
+      <zone ulx="385" uly="1422" lrx="2239" lry="1520" xml:id="P11a_R12" />
+      <zone ulx="396" uly="1526" lrx="1969" lry="1591" xml:id="P11a_R13" />
+      <zone ulx="555" uly="1624" lrx="2260" lry="1730" xml:id="P11a_R14" />
+      <zone ulx="351" uly="1747" lrx="2135" lry="1831" xml:id="P11a_R15" />
+      <zone ulx="363" uly="1875" lrx="2265" lry="1970" xml:id="P11a_R16" />
+      <zone ulx="375" uly="1994" lrx="2260" lry="2078" xml:id="P11a_R17" />
+      <zone ulx="388" uly="2110" lrx="2241" lry="2192" xml:id="P11a_R18" />
+      <zone ulx="383" uly="2224" lrx="2244" lry="2322" xml:id="P11a_R19" />
+      <zone ulx="393" uly="2343" lrx="2221" lry="2495" xml:id="P11a_R20" />
+      <zone ulx="369" uly="2542" lrx="2228" lry="2638" xml:id="P11a_R21" />
+      <zone ulx="385" uly="2656" lrx="2225" lry="2742" xml:id="P11a_R22" />
+      <zone ulx="397" uly="2764" lrx="2261" lry="2840" xml:id="P11a_R23" />
+      <zone ulx="404" uly="2866" lrx="2255" lry="2946" xml:id="P11a_R24" />
+      <zone ulx="216" uly="2988" lrx="2248" lry="3070" xml:id="P11a_R25" />
+      <zone ulx="4" uly="3120" lrx="2095" lry="3207" xml:id="P11a_R26" />
+      <zone ulx="523" uly="3238" lrx="2259" lry="3312" xml:id="P11a_R27" />
+      <zone ulx="79" uly="3335" lrx="2013" lry="3435" xml:id="P11a_R28" />
+    </surface>
+    <!-- Prolusioni 2, pagina vuota-->
+    <surface n="2" xml:id="P11aRetro">
+      <graphic url='ms_fr_03951_01_2_p011v.jpg' width='2376px' height='3160px' />
+      <zone ulx="165" uly="239" lrx="2296" lry="2867" xml:id="P2_retro" />
+    </surface>
+    <!-- Prolusioni pagina 12 -->
+    <surface n="3" xml:id="P12Intera">
+      <!-- surface definisce una superficie scritta come uno spazio di coordinate bidimensionale,
+            raggruppando opzionalmente una o più rappresentazioni grafiche di quello spazio,
+            zone di interesse all'interno di quello spazio e trascrizioni della scrittura al loro interno -->
+
+      <!-- graphic indica la posizione di un'immagine, un'illustrazione o un diagramma incorporati -->
+      <!-- zone definisce qualsiasi area bidimensionale all'interno di un elemento di superficie -->
+      <graphic url='paginadodici.jpg' width='2790px' height='3455px' />
+      <zone ulx="361" uly="107" lrx="2743" lry="207" xml:id="P12_R1" />
+      <zone ulx="633" uly="259" lrx="2767" lry="333" xml:id="P12_R2" />
+      <zone ulx="413" uly="367" lrx="2743" lry="467" xml:id="P12_R3" />
+      <zone ulx="347" uly="503" lrx="2763" lry="599" xml:id="P12_R4" />
+      <zone ulx="369" uly="629" lrx="2239" lry="703" xml:id="P12_R5" />
+      <zone ulx="533" uly="751" lrx="2081" lry="841" xml:id="P12_R6" />
+      <zone ulx="423" uly="885" lrx="2665" lry="967" xml:id="P12_R7" />
+      <zone ulx="397" uly="999" lrx="2285" lry="1101" xml:id="P12_R8" />
+      <zone ulx="619" uly="1303" lrx="2781" lry="1385" xml:id="P12_R9" />
+      <zone ulx="25" uly="1435" lrx="351" lry="1527" xml:id="P12_R10" /> <!-- nota a margine-->
+      <zone ulx="467" uly="1439" lrx="2469" lry="1521" xml:id="P12_R11" />
+      <zone ulx="101" uly="1569" lrx="559" lry="1759" xml:id="P12_R12" /> <!-- nota a margine -->
+      <zone ulx="621" uly="1609" lrx="2005" lry="1721" xml:id="P12_R13" />
+      <zone ulx="303" uly="1881" lrx="929" lry="2003" xml:id="P12_R14" />
+      <zone ulx="551" uly="2059" lrx="2765" lry="2169" xml:id="P12_R15" />
+      <zone ulx="459" uly="2191" lrx="2577" lry="2285" xml:id="P12_R16" />
+      <zone ulx="451" uly="2355" lrx="2669" lry="2431" xml:id="P12_R17" />
+      <zone ulx="483" uly="2465" lrx="2455" lry="2581" xml:id="P12_R18" />
+      <zone ulx="659" uly="2617" lrx="1513" lry="2719" xml:id="P12_R19" />
+      <zone ulx="633" uly="2757" lrx="2725" lry="2803" xml:id="P12_R20" />
+      <zone ulx="509" uly="2861" lrx="2681" lry="2935" xml:id="P12_R21" />
+      <zone ulx="515" uly="2987" lrx="2741" lry="3027" xml:id="P12_R22" />
+      <zone ulx="579" uly="3091" lrx="2731" lry="3171" xml:id="P12_R23" />
+      <zone ulx="563" uly="3207" lrx="1095" lry="3327" xml:id="P12_R24" />
+    </surface>
+  </facsimile>
+
+  <text xml:lang="fr" xml:id="P2_11a_12-fr" subtype="manuscript">
+    <body>
+      <div type="pagina" n="11a">
+        <pb n="11" facs="#P11aIntera" />
+        <!-- Page beginning -->
+        <ab type="paragrafo" n="1" xml:id="P2_11a_Par1">
+          <!--viene utilizzato per codificare unità di testo generiche, infatti sta per anonymous block, lo utilizziamo per codificare i paragrafi, che numeriamo con n e a cui associamo un id  -->
+          <lb xml:id="P2_11a_L1" n="1" facs="#P11a_R1" /> <!--lb sta per line break e indica l'inizio di una nuova riga, a cui associo un id e un numero -->
+          <term ref="#exemple">Exemple</term>
+          emprunté à l’
+          <term ref="#historie">
+            <abbr type="suspension">
+              hist
+              <am>.</am>
+            </abbr>
+            <expan>
+              <ex>oire</ex>
+            </expan>
+          </term>
+          du
+          <!-- term viene utilizzato per indicare un termine tecnico, abbr per un'abbreviazione che può essere di vari tipi,expan lo uso per indicare la parola estesa, ex per indicare le lettere che il codificatore ha dovuto aggiungere e am per indicare la punteggiatura dell'abbreviazione-->
+          <term ref="#verbe">verbe</term>
+          <mentioned xml:lang="de">
+            <choice>
+              <corr cert="high">sein</corr>
+              <sic>subtantif</sic>
+            </choice>
+          </mentioned>
+          en
+          <!--mentioned viene utilizzato quando codifichiamo una parola che però non viene usata nel suo significato, indichiamo anche la lingua di appartenenza. choice viene usato quando il codificatore codifica con ciò che ritiene giusto (corr) una parola secondo lui sbagliata (indicata con sic), usiamo anche un grado di certezza, quanto sono sicuro che quella sia la parola giusta -->
+          <lb xml:id="P2_11a_L2" n="2" facs="#P11a_R2" />
+          <lang>allemand</lang>
+          .
+          <!-- contiene il nome di una lingua menzionata nella discussione etimologica o di altra natura-->
+        </ab>
+        <ab type="paragrafo" n="2" xml:id="P2_11a_Par2">
+          On a dit en
+          <lang>allemand</lang>
+          <add resp="#FDS" place="above">
+            <abbr type="suspension">pend</abbr>
+            <expan>
+              <ex>ant</ex>
+            </expan>
+            des siècles
+          </add>
+          jusqu’en plein
+          <!-- add viene usato per indicare un aggiunta di parole/frasi in un punto rispetto al testo, con place indichiamo la posizione dell'aggiunta-->
+          <lb xml:id="P2_11a_L3graphic" n="3" facs="#P11a_R3" />
+          <date>16 siècle</date>
+          <mentioned xml:lang="de">
+            <emph rend="underline">ich was</emph>
+          </mentioned>
+          <mentioned xml:lang="fr"> j’étais;</mentioned> <!-- data viene usato per codificare una data, emph per far vedere l'enfasi della scrittura, in questo caso ottenuta attraverso una sottolineatura-->
+          <add resp="#FDS" place="below">
+            <mentioned xml:lang="de">
+              <emph rend="underline">er was</emph>
+            </mentioned>
+            <mentioned xml:lang="fr">il était</mentioned>
+            ;
+          </add>
+          <mentioned xml:lang="de">
+            <emph rend="underline">wir waren</emph>
+          </mentioned>
+          <mentioned xml:lang="fr">
+            <abbr type="contraction">ns</abbr>
+            <expan>nous</expan>
+            étions
+          </mentioned>
+          ,
+          <lb xml:id="P2_11a_L4" n="4" facs="#P11a_R4" />
+          état qui s’est du reste conservé sans
+          <term ref="#changement">changement</term>
+          chez
+          <lb xml:id="P2_11a_L5" n="5" facs="#P11a_R5" />
+          les Anglais :
+          <mentioned xml:lang="en">
+            <emph rend="underline"> I was, he was, we were </emph>
+          </mentioned>
+          .
+        </ab>
+        <ab type="paragrafo" n="3" xml:id="P2_11a_Par3">
+            Pourquoi
+          </ab>
+        <ab type="paragrafo" n="4" xml:id="P2_11a_Par4">
+          <lb xml:id="P2_11a_L6" n="6" facs="#P11a_R6" />
+          Il y
+          <del rend="overstrike"> a </del>
+          <add resp="#FDS" place="below"> avait </add>
+          un
+          <emph rend="underline">s</emph> <!--del viene utilizzato per indicare che qualcosa è stato cancellato dall'autore, può essere leggibile o meno -->
+          <subst>
+            <del>
+              <gap reason="deleted" quantity="3" unit="character" />
+            </del>
+            <add resp="#FDS" place="above">
+              <!--subst indica la sostituzione di un termine errato con uno corretto, viene utilizzato quindi con delete e add. gap viene utilizzato quando non possiamo codificare parti di testo e può accadere per vari motivi -->
+              <abbr type="contraction">ds</abbr>
+              <expan>
+                d
+                <ex>an</ex>
+                s
+              </expan>
+              <mentioned xml:lang="de">
+                <emph rend="underlinie">was</emph>
+              </mentioned>
+            </add>
+          </subst>
+          et
+            un r
+          <del rend="overstrike">
+            <gap reason="deleted" quantity="3" unit="words" />
+          </del>
+          <abbr type="contraction">ds</abbr>
+          <expan>
+            d
+            <ex>an</ex>
+            s
+          </expan>
+          <emph rend="underline">
+            <mentioned xml:lang="de">waren</mentioned>
+          </emph>
+          ,
+        </ab>
+        <ab type="paragrafo" n="5" xml:id="P2_11a_Par5">
+          <lb xml:id="P2_11a_L7" n="7" facs="#P11a_R7" />
+          pour cela il y a des raisons excellentes, mais je
+          <lb xml:id="P2_11a_L8" n="8" facs="#P11a_R8" />
+          ne les examine pas
+          <del rend="overstrike">
+            <gap reason="deleted" extent="2 words" />
+          </del>
+          car, quelles que soient
+          <lb xml:id="P2_11a_L9" n="9" facs="#P11a_R9" />
+          ces
+          <subst>
+            <del rend="overstrike">
+              <gap reason="illegible" quantity="1" unit="word" />
+            </del>
+            <add resp="#FDS" place="below">
+              <term ref="#causes">causes</term>
+              <term ref="#retrospectives">rétrospectives</term>
+            </add>
+          </subst>
+          ,
+            elles ne changent rien à
+          <del rend="overstrike">
+            <gap reason="deleted" quantity="3" unit="character" />
+          </del>
+          l’
+          <term ref="#état">état</term>
+          <lb xml:id="P2_11a_L10" n="10" facs="#P11a_R10" />
+          que nous avons au
+          <del rend="overstrike">1</del>
+          moment
+          <add resp="#FDS" place="above">
+            dont
+            <abbr type="contraction">ns</abbr>
+            <expan>
+              n
+              <ex>ou</ex>
+              s
+            </expan>
+            <term ref="#parlons">parlons</term>
+            ,
+          </add>
+          et elles
+          <lb xml:id="P2_11a_L11" n="11" facs="#P11a_R11" />
+          <add resp="#FDS" place="above">  sont impuissantes également à</add>
+          changer rien
+          <add resp="#FDS" place="above"> respnon plus</add>
+          à ce qui va se
+            passer à partir
+          <lb xml:id="P2_11a_L12" n="12" facs="#P11a_R12" />
+          de cet
+          <term ref="#état">état</term>
+          .
+        </ab>
+        <ab type="paragrafo" n="6" xml:id="P2_11a_Par6">
+          Au fond l’
+          <emph rend="underline"> r</emph>
+          <add resp="#FDS" place="below">
+            <abbr type="contraction"> ds </abbr>
+            <expan>
+              d
+              <ex>an</ex>
+              s
+            </expan>
+            <emph rend="underline">
+              <mentioned xml:lang="de">waren</mentioned>
+            </emph>
+          </add>
+          est une
+          <term ref="#modification">modification</term>
+          de l’
+          <emph rend="underline">s</emph>
+          ,
+          <lb xml:id="P2_11a_L13" n="13" facs="#P11a_R13" />
+          mais, je le répète, cela est étranger à la
+          <term ref="#question">question</term>
+          .
+        </ab>
+        <ab type="paragrafo" n="7" xml:id="P2_11a_Par7">
+          <lb xml:id="P2_11a_L14" n="14" facs="#P11a_R14" />
+          Au même moment où existe
+          <add resp="#FDS" place="above">
+            <abbr type="contraction">pr</abbr>
+            <expan>
+              p
+              <ex>ou</ex>
+              r
+            </expan>
+            une
+            <term ref="#cause">cause</term>
+            quelconque
+          </add>
+          <emph rend="underline">
+            <mentioned xml:lang="de">was – waren</mentioned>
+          </emph>
+          ,
+          <lb xml:id="P2_11a_L15" n="15" facs="#P11a_R15" />
+          existe aussi,
+          <subst>
+            <del>
+              <gap reason="deleted" extent="6 words" />
+            </del>
+            <add resp="#FDS" place="above">
+              et toujours
+              <abbr type="contraction">pr</abbr>
+              <expan>
+                p
+                <ex>ou</ex>
+                r
+              </expan>
+              une raison que
+              <abbr type="contraction">ns</abbr>
+              <expan>
+                n
+                <ex>ou</ex>
+                s
+              </expan>
+              n’avons pas à
+                rechercher
+            </add>
+          </subst>
+          <lb xml:id="P2_11a_L16" n="16" facs="#P11a_R16" />
+          <del>
+            <gap reason="deleted" extent="one line" />
+          </del>
+          <lb xml:id="P2_11a_L17" n="17" facs="#P11a_R17" />
+          <del>
+            <gap reason="deleted" extent="2 words" />
+          </del>
+          <emph rend="underliine">
+            <mentioned xml:lang="de">  ich fuhr, wir fuhren </mentioned>
+          </emph>
+          <mentioned xml:lang="fr">
+            j’allais en voiture,
+            <lb xml:id="P2_11a_L18" n="17" facs="#P11a_R18" />
+            nous allions en voiture
+          </mentioned>
+          , ou bien
+          <emph rend="underline">
+            <mentioned xml:lang="de"> ich gebar, wir gebaren </mentioned>
+          </emph>
+          <lb xml:id="P2_11a_L19" n="19" facs="#P11a_R19" />
+          <mentioned xml:lang="fr">j’enfantais, nous enfantions. </mentioned>
+        </ab>
+        <ab type="paragrafo" n="8" xml:id="P2_11a_Par8">
+          Dans ces
+          <term ref="#prétérits">prétérits</term>
+          -là,
+          <lb xml:id="P2_11a_L20" n="20" facs="#P11a_R20" />
+          l’
+          <emph rend="underline"> r</emph>
+          ,
+          <add resp="#FDS" place="below"> d’où qu’il ait pu sortir </add>
+          va d’un bout à l’autre de la
+          <term ref="#flexion">flexion</term>
+          et
+          <del>
+            <gap reason="illegible" extent="2 words" />
+          </del>
+          <lb xml:id="P2_11a_L21" n="21" facs="#P11a_R21" />
+          ces
+          <term ref="#prétérits">prétérits</term>
+          -là ont l’avantage de paraître
+          <lb xml:id="P2_11a_L22" n="22" facs="#P11a_R22" />
+          plus
+          <term ref="#simples">simples</term>
+          plus
+          <term ref="#logiques">logiques</term>
+          , quoique
+          <term ref="#historiquement">historiquement</term>
+          ils ne
+          <lb xml:id="P2_11a_L23" n="23" facs="#P11a_R23" />
+          le soient pas plus que
+          <emph rend="underline">
+            <mentioned xml:lang="de"> was – waren</mentioned>
+          </emph>
+          .
+        </ab>
+        <ab type="paragrafo" n="9" xml:id="P2_11a_CANCELLATO">
+          <delSpan spanTo="#delP9" resp="#FDS" rend="strikethrough" /> <!-- delSpan mi va ad indicare una porzione di testo cancellato maggiore rispetto al solito del, viene chiuso con l'elemento anchor riportando lo spanTo identificativo-->
+          <del>
+            <unclear cert="low" reason="cancelled">qu’ arrive</unclear>
+          </del>
+          -t-il
+          <!-- unclear viene utilizzato per identificare una parte di testo non chiara ma comunque codificabile-->
+          <lb xml:id="P2_11a_L24" n="24" facs="#P11a_R24" />
+          aless.
+          <add resp="#FDS" place="above" cert="low">
+            Il su
+            <gap reason="illegible" extent="1 word" />
+          </add>
+          <del rend="overstrike">
+            Le phénomène
+            <add resp="#FDS" place="above" cert="low">justicatif</add>
+            que
+            <gap reason="illegible" extent="1 word" />
+            toujours le
+          </del>
+          <del rend="verticalstrike">meme</del>
+          <lb xml:id="P2_11a_L25" n="25" facs="#P11a_R25" />
+          et que
+          <persName>
+            <forename>
+              <abbr>
+                M
+                <am>.</am>
+              </abbr>
+            </forename>
+            <forename>
+                Louis
+              </forename>
+            <surname> Havet</surname>
+          </persName>
+          <del>
+            <gap reason="deleted" extent="2 words" />
+          </del>
+          <add resp="#FDS" place="above" cert="low"> propose de trade</add>
+          <gap quantity="1" unit="word" reason="illegible" />
+          la formule
+          <lb xml:id="P2_11a_L26" n="26" facs="#P11a_R26" />
+          l’image
+          <del>
+            <gap quantity="6" unit="character" reason="deleted" />
+          </del>
+          <add resp="#FDS" place="above">
+            <gap extent="some words" reason="illegible" />
+          </add>
+          mathematique de la 4 propartitionelle:
+          <lb xml:id="P2_11a_L27" n="27" facs="#P11a_R27" />
+
+          <mentioned xml:lang="de">
+            <emph rend="underline"> wir gebaren </emph>
+            :
+            <emph rend="underline"> ich gebar </emph>
+            =
+            <emph rend="underline"> wir waren </emph>
+            :x
+          </mentioned>
+
+          <lb xml:id="P2_11a_L28" n="28" facs="#P11a_R28" />
+          <gap extent="some words" reason="illegible" />
+          :
+          <del rend="overstrike">
+            x Résultat =
+            <mentioned xml:lang="de">
+              <emph rend="underline">ich war </emph>
+            </mentioned>
+            .
+          </del>
+          X : =
+          <mentioned xml:lang="de">
+            <emph rend="underline">ich war </emph>
+
+
+          </mentioned>
+          <anchor xml:id="delP9" />
+        </ab>
+      </div>
+      <div type="pagina" n="12">
+        <pb n="12" facs="#P12Intera" />
+        <!-- inizio pagina -->
+        <!-- paragrafo 1-->
+        <ab type="paragrafo" n="1" xml:id="P2_12_Par1">
+          <!--viene utilizzato per codificare unità di testo generiche, infatti sta per anonymous block, lo utilizziamo per codificare i paragrafi, che numeriamo con n e a cui associamo un id  -->
+          <!-- riga 1-->
+          <lb xml:id="P2_12_L1" n="1" facs="#P12_R1" /> <!--lb sta per line break e indica l'inizio di una nuova riga, a cui associo un id e un numero -->
+          Je n'ai donné
+          <term ref="#nécessairement">nécessairement</term>
+          qu'une
+          <term ref="#idée">idée</term>
+          très incomplète du
+          <!-- riga 2-->
+          <lb xml:id="P2_12_L2" n="2" facs="#P12_R2" />
+          <term ref="#phénomène">phénomène</term>
+          et je ne l’ai considéré que dans
+          <choice>
+            <corr cert="high">une ou deux</corr>
+            <sic>1 ou 2</sic>
+          </choice>
+          de
+          <!-- riga 3-->
+          <lb xml:id="P2_12_L3" n="3" facs="#P12_R3" />
+          ses
+          <term ref="#formes">formes</term>
+          les
+          <choice>
+            <corr cert="high">plus</corr>
+            <sic>+</sic>
+          </choice>
+          saisissantes et les
+          <choice>
+            <corr cert="high">plus</corr>
+            <sic>+</sic>
+          </choice>
+          saisissables.
+          <gap
+            reason=" cancelled "
+            quantity=" 1 "
+            unit="word "
+          />
+          <!-- gap indica un punto in cui del materiale è stato omesso dalla trascrizione, sia per ragioni editoriali aggiunti nell'intestazione TEI, sia perché il materiale è illegibile o incomprensibile. -->
+        </ab>
+        <!-- paragrafo 2 -->
+        <ab type="paragrafo" n="2" xml:id="P2_12_Par2">
+          <!-- riga 4-->
+          <lb xml:id="P2_12_L4" n="4" facs="#P12_R4" />
+          <gap
+            reason=" cancelled "
+            quantity=" 1 "
+            unit="word "
+          />
+          L'autre
+          <gap
+            reason=" cancelled "
+            quantity=" 2 "
+            unit="word "
+          />
+          <term ref="#cause">cause</term>
+          des
+          <term ref="#transformations">
+            <abbr type="suspension">
+              transf
+              <am>.</am>
+            </abbr>
+            <expan>
+              <ex>ormations</ex>
+            </expan>
+          </term>
+          <term ref="#linguistiques">linguistiques</term>
+          ,
+          <!-- riga 5-->
+          <lb xml:id="P2_12_L5" n="5" facs="#P12_R5" />
+          la
+          <term ref="#cause">cause</term>
+          <term ref="#phonétique">
+            <abbr type="suspension">
+              phonéti
+              <am>.</am>
+            </abbr>
+            <expan>
+              <ex>que</ex>
+            </expan>
+          </term>
+          ,
+            appelle maintenant notre
+          <abbr type="suspension">
+            att
+            <am>.</am>
+          </abbr>
+          <expan>
+            <ex>ention</ex>
+          </expan>
+        </ab>
+        <!-- paragrafo 3 -->
+        <ab type="paragrafo" n="3" xml:id="P2_12_Par3">
+          <!-- riga 6 -->
+          <lb xml:id="P2_12_L6" n="6" facs="#P12_R6" />
+          <choice>
+            <corr cert="high">Pour</corr>
+            <sic>Pr</sic>
+          </choice>
+          des raisons qu’il ne serait
+          <!-- riga 7 -->
+          <lb xml:id="P2_12_L7" n="7" facs="#P12_R7" />
+          <!-- aggiunta di chi trascrive-->
+          <add place="inline"> pas possible d’exposer ici, elle </add>
+          échappe à notre regard et à notre
+          <choice>
+            <corr cert="high">conscience</corr>
+            <sic>csi</sic>
+          </choice>
+
+        </ab>
+        <!-- paragrafo 4 -->
+        <ab type="paragrafo" n="4" xml:id="P2_12_Par4">
+          Ce
+          <term ref="#mouvement">mouvement</term>
+          <!-- riga 8-->
+          <lb xml:id="P2_12_L8" n="8" facs="#P12_R8" />
+          <!-- controllare-->
+          <term ref="#phonétique">
+            <choice>
+              <corr cert="high">phonétique</corr>
+              <sic>phonetiq</sic>
+            </choice>
+          </term>
+          existe
+          <choice>
+            <corr cert="high">dans</corr>
+            <sic>D</sic>
+          </choice>
+          toutes les
+          <term ref="#langues">langues</term>
+          :
+          <gap
+            reason=" cancelled "
+            quantity=" 2 "
+            unit="word "
+          />
+          <!-- riga 9 -->
+          <lb xml:id="P2_12_L9" n="9" facs="#P12_R9" />
+          <mentioned xml:lang="lat">cantare</mentioned>
+          >
+          <mentioned xml:lang="fr">chanter</mentioned>
+          ,
+          <mentioned xml:lang="lat">campus</mentioned>
+          >
+          <mentioned xml:lang="fr">champ</mentioned>
+          ,
+          <mentioned xml:lang="lat">cathedra</mentioned>
+          >
+          <!-- riga 10-->
+          <lb xml:id="P2_12_L10" n="10" facs="#P12_R10" />
+          <mentioned xml:lang="fr">chaire</mentioned>
+          ,
+          <mentioned xml:lang="lat">
+            calamus
+          </mentioned>
+          >
+          <mentioned xml:lang="fr">chaume</mentioned>
+          ,
+          <mentioned xml:lang="lat" rend="underline">vacca </mentioned>
+          >
+          <mentioned xml:lang="fr">vache</mentioned>
+          ,
+          <add resp="#FDS" place="margin">
+            <!-- nota a margine -->
+            <mentioned xml:lang="lat" rend="underline"> capillus </mentioned>
+          </add>
+        </ab>
+        <!-- paragrafo 5 -->
+        <ab type="paragrafo" n="5" xml:id="P2_12_Par5">
+          <add resp="#FDS" place="margin">
+            <mentioned xml:lang="lat">cantare</mentioned>
+            se décompose
+            <mentioned xml:lang="lat" rend="underline">k'antar</mentioned>
+            .
+          </add>
+        </ab>
+        <!-- paragrafo 6 -->
+        <ab type="paragrafo" n="6" xml:id="P2_12_Par6">
+          <!-- riga 11-->
+          <lb xml:id="P2_12_L11" n="11" facs="#P12_R11" />
+          Autre
+          <term ref="#phénomène">
+            <choice>
+              <corr cert="high">phénomène</corr>
+              <sic>pon</sic>
+            </choice>
+          </term>
+          :
+          <mentioned xml:lang="lat" rend="underline">civitas</mentioned>
+          >
+          <mentioned xml:lang="fr">cité</mentioned>
+          <!-- controllare-->
+          <choice>
+            <corr cert="low">[ ]</corr>
+            <sic>ce</sic>
+          </choice>
+        </ab>
+        <!-- paragrafo 7 -->
+        <ab type="paragrafo" n="7" xml:id="P2_12_Par7">
+          <!-- riga 12-->
+          <lb xml:id="P2_12_L12" n="12" facs="#P12_R12" />
+          <mentioned xml:lang="fr" rend="underline">-ll-</mentioned>
+          <term ref="#mouillé" rend="underline">mouillé</term>
+          .
+        </ab>
+        <!-- paragrafo 8 -->
+        <ab type="paragrafo" n="8" xml:id="P2_12_Par8">
+          <!-- riga 13-->
+          <lb xml:id="P2_12_L13" n="13" facs="#P12_R13" />
+          <term ref="#Caractère">Caractère </term>
+          <term ref="capital"> capital</term>
+          : frappe
+          <term ref="#aveuglément">aveuglément</term>
+          toutes
+          <!-- riga 14-->
+          <lb xml:id="P2_12_L14" n="14" facs="#P12_R14" />
+          les
+          <term ref="#formes">formes</term>
+          de la
+          <term ref="#langue">langue</term>
+          où se trouve le
+          <term ref="#son">son</term>
+          en
+          <abbr type="suspension">
+            quest
+            <am>.</am>
+          </abbr>
+          <expan>
+            <ex>ion</ex>
+          </expan>
+          <!-- riga 15-->
+          <lb xml:id="P2_12_L15" n="15" facs="#P12_R15" />
+          et par
+          <term ref="#conséquent">
+            <choice>
+              <corr cert="high">conséquent</corr>
+              <sic>cse</sic>
+            </choice>
+          </term>
+          offre un
+          <term ref="#caractère">caractère</term>
+          de
+          <term ref="#régularité">régularité</term>
+          <!-- riga 16-->
+          <lb xml:id="P2_12_L16" n="16" facs="#P12_R16" />
+          <term ref="#mathématique">mathématique</term>
+          <gap
+            reason=" cancelled "
+            quantity=" 4 "
+            unit="word "
+          />
+          <!-- riga 17-->
+          <lb xml:id="P2_12_L17" n="17" facs="#P12_R17" />
+          <gap
+            reason=" cancelled "
+            quantity=" 2 "
+            unit="word "
+          />
+        </ab>
+        <!-- paragrafo 9 -->
+        <ab type="paragrafo" n="9" xml:id="P2_12_Par9">
+          <!-- riga 18-->
+          <lb xml:id="P2_12_L18" n="18" facs="#P12_R18" />
+          Ce
+          <term ref="#caractèrederégularité">caractère de régularité</term>
+          est tel que l’on peut
+          <!-- riga 19-->
+          <lb xml:id="P2_12_L19" n="19" facs="#P12_R19" />
+          prévoir, étant donné un
+          <term ref="#mot">mot</term>
+          <lang>latin</lang>
+          ,
+          ce qu’il sera
+          <!-- riga 20-->
+          <lb xml:id="P2_12_L20" n="20" facs="#P12_R20" />
+          en
+          <lang>
+            <abbr type="suspension">
+              fr
+              <am>.</am>
+            </abbr>
+            <expan>
+              <ex>ançais</ex>
+            </expan>
+          </lang>
+          ;
+          étant donné un
+          <term ref="#mot">mot</term>
+          <gap
+            reason=" cancelled "
+            quantity=" 1 "
+            unit="word "
+          />
+          <add place="above">
+            <lang>indo-européen</lang>
+          </add>
+          , ce qu’il serait
+          <!--riga 21-->
+          <lb xml:id="P2_12_L21" n="21" facs="#P12_R21" />
+          en
+          <lang>grec</lang>
+          ;
+          étant donné [ ] (s’il n’y a pas
+          <abbr type="suspension">
+            perturbat
+            <am>.</am>
+          </abbr>
+          <expan>
+            <ex>ion</ex>
+          </expan>
+          <!-- riga 22-->
+          <lb xml:id="P2_12_L22" n="22" facs="#P12_R22" />
+          par
+          <term ref="#analogie">analogie</term>
+          ).
+        </ab>
+      </div>
+
+
+      <!-- Traduzione -->
+      <div type="traduzionePagina11a">
+        <ab n="1" corresp="P2_11a_Par1" xml:lang="it">
+              Esempio preso dalla storia del verbo sein in
+              tedesco.
+            </ab>
+        <ab n="2" corresp="P2_11a_Par2" xml:lang="it">
+              Si è detto in tedesco per secoli, fino al
+              XVI secolo inoltrato, ich was, “io ero”; er was “egli
+              era”; wir waren “noi eravamo”, situazione che si è
+              del resto conservata senza cambiamento tra gli
+              inglesi: I was, he was, we were.
+            </ab>
+        <ab n="3" corresp="P2_11a_Par3" xml:lang="it">
+              Perché?
+            </ab>
+        <ab n="4" corresp="P2_11a_Par4" xml:lang="it">
+              C’era una s in was e una r in waren,
+            </ab>
+        <ab n="5" corresp="P2_11a_Par5" xml:lang="it">
+              e ci sono ottime ragioni per dirlo, ma io non le prendo in esame
+              perché, quali che siano queste cause retrospettive,
+              non cambiano nulla dello stato che noi abbiamo nel
+              momento in cui parliamo, e sono ugualmente
+              impotenti a cambiare checchessia in ciò che
+              succederà a partire da quello stato.
+            </ab>
+        <ab n="6" corresp="P2_11a_Par6" xml:lang="it">
+              In fondo la r in waren è una modificazione della s ma, ripeto,
+              tutto ciò è estraneo alla questione.
+            </ab>
+        <ab n="7" corresp="P2_11a_Par7" xml:lang="it">
+              Nello stesso momento in cui esiste per una
+              causa qualunque was – waren, esiste anche, e
+              sempre per una ragione che non dobbiamo andare a
+              cercare, ich fuhr, wir fuhren “io andavo in vettura,
+              noi andavamo in vettura”, o anche ich gebar, wir
+              gebaren “io partorivo, noi partorivamo”.
+            </ab>
+        <ab n="8" corresp="P2_11a_Par8" xml:lang="it">
+              In questi ultimi preteriti, la r, da dovunque sia uscita,
+              va da un capo all’altro della flessione e questi
+              preteriti hanno il vantaggio di sembrare più semplici
+              e più logici, sebbene storicamente non lo siano più
+              di was – waren
+            </ab>
+      </div>
+      <!-- traduzione pagina 12 -->
+      <div type="traduzionePagina12">
+        <!-- paragrafo 1 -->
+        <ab n="1" corresp="P2_12_Par1" xml:lang="it">
+      Necessariamente, non ho dato se non un’idea molto incompleta del fenomeno,
+      e non l’ho considerato che in una o due tra le sue forme più comprensive e più evidenti.
+      </ab>
+        <!-- paragrafo 2 -->
+        <ab n="2" corresp="P2_12_Par2" xml:lang="it">
+      L’altra causa delle trasformazioni linguistiche, la causa fonetica, richiede ora la nostra attenzione
+      </ab>
+        <!-- paragrafo 3 -->
+        <ab n="3" corresp="P2_12_Par3" xml:lang="it">
+      Per ragioni che non sarebbe possibile esporre qui, essa sfugge al nostro sguardo e alla nostra coscienza
+      </ab>
+        <!-- paragrafo 4 -->
+        <ab n="4" corresp="P2_12_Par4" xml:lang="it">
+      Questo movimento fonetico esiste in tutte le lingue: cantare > chanter, campus > champ, cathedra > chaire, calamus > chaume,
+      vacca > vache, capillus [> cheveux].
+      </ab>
+        <!-- paragrafo 5 -->
+        <ab n="5" corresp="P2_12_Par5" xml:lang="it">
+          [Cantare] si decompone k'antar.
+        </ab>
+        <!-- paragrafo 6 -->
+        <ab n="6" corresp="P2_12_Par6" xml:lang="it">
+      Altro fenomeno: civitas > cité [ ]
+      </ab>
+        <!-- paragrafo 7 -->
+        <ab n="7" corresp="P2_12_Par7" xml:lang="it">
+      -ll- mouillé.
+      </ab>
+        <!-- paragrafo 8 -->
+        <ab n="8" corresp="P2_12_Par8" xml:lang="it">
+      Carattere capitale: colpisce ciecamente tutte le forme della lingua in cui si trova il suono in questione e di conseguenza
+      offre un carattere di regolarità matematica
+      </ab>
+        <!-- paragrafo 9 -->
+        <ab n="9" corresp="P2_12_Par9" xml:lang="it">
+      Questo carattere di regolarità è tale che si può prevedere, data una parola latina, ciò che sarà in francese;
+      data una parola indoeuropea, ciò che sarà in greco; data [ ] (se non c’è perturbazione per analogia).
+      </ab>
+      </div>
+    </body>
+    <!--terminologia pag11a-->
+    <back>
+      <list type="terminologia">
+        <label>
+          <term xml:id="exemple" xml:lang="fr">Exemple</term>
+          <term ref="#exemple" xml:lang="it">Esempio</term>
+        </label>
+        <item>
+          <gloss target="#exemple" xml:lang="it" source="https://www.treccani.it/vocabolario/esempio/">
+            L'
+            <hi rend="bold"> esempio</hi>
+            è un fatto particolare che serve a illustrare un’affermazione generica,
+                a dare evidenza a un principio teorico.
+          </gloss>
+        </item>
+
+        <label>
+          <term xml:id="historie" xml:lang="fr">Histoire</term>
+          <term ref="#historie" xml:lang="it">Storia</term>
+        </label>
+        <item>
+          <gloss target="#historie" xml:lang="it" source="https://www.treccani.it/vocabolario/storia/">
+            La
+            <hi rend="bold">storia</hi>
+            è l'esposizione ordinata di fatti e avvenimenti umani del passato,
+                quali risultano da un’indagine critica volta ad accertare sia la verità di essi,
+                sia le connessioni reciproche per cui è lecito riconoscere in essi un’unità di sviluppo.
+          </gloss>
+        </item>
+        <label>
+          <term xml:id="verbe" xml:lang="fr">Verbe</term>
+          <term ref="#verbe" xml:lang="it">Verbo</term>
+        </label>
+        <item>
+          <gloss target="#verbe" xml:lang="it" source="https://it.wikipedia.org/wiki/Verbo">
+            Il
+            <hi rend="bold">verbo </hi>
+            (dal latino verbum, "parola") è una parte del discorso variabile,
+                 che indica un'azione che il soggetto compie o subisce, l'esistenza o uno stato del soggetto,
+                  il rapporto tra il soggetto e il nome del predicato.
+          </gloss>
+        </item>
+        <label>
+          <term xml:id="changement" xml:lang="fr">Changement</term>
+          <term ref="#changement" xml:lang="it">Cambiamento</term>
+        </label>
+        <item>
+          <gloss target="#changement" xml:lang="it" source="https://www.treccani.it/vocabolario/cambiamento/">
+              il cambiare, il cambiarsi.
+            </gloss>
+        </item>
+        <label>
+          <term xml:id="causes" xml:lang="fr">Causes</term>
+          <term ref="#causes" xml:lang="it">Cause</term>
+        </label>
+        <item>
+          <gloss target="#causes" xml:lang="it" source="https://www.treccani.it/vocabolario/ricerca/cause/">
+            la
+            <hi rend="bold"> causa </hi>
+            è un fatto o avvenimento che provoca un determinato effetto,
+                che è origine o occasione di un altro fatto.
+          </gloss>
+        </item>
+        <label>
+          <term xml:id="retrospectives" xml:lang="fr">Rétrospectives</term>
+          <term ref="#retrospectives" xml:lang="it">Retrospettive</term>
+        </label>
+        <item>
+          <gloss target="#retrospectives" xml:lang="it" source="https://www.treccani.it/vocabolario/retro_res-0f8f0e80-002f-11de-9d89-0016357eee51/">
+            una causa
+            <hi rend="bold">retrospettiva </hi>
+            è una causa che si rifà al passato,
+                  ai decennî o ventennî precedenti.
+          </gloss>
+        </item>
+
+        <label>
+          <term xml:id="état" xml:lang="fr">état</term>
+          <term ref="#état" xml:lang="it">stato</term>
+        </label>
+        <item>
+          <gloss target="#état" xml:lang="it" source="https://www.treccani.it/vocabolario/stato/">
+            uno stato è il modo di essere di una cosa o una persona.
+          </gloss>
+        </item>
+        <label>
+          <term xml:id="parlons" xml:lang="fr">parlons</term>
+          <term ref="#parlons" xml:lang="it">parliamo</term>
+        </label>
+        <item>
+          <gloss target="#parlons" xml:lang="it" source="https://www.treccani.it/vocabolario/parlare2/">
+            <hi rend="bold">Parlare </hi>
+            significa pronunciare suoni articolati, dire delle parole.
+          </gloss>
+        </item>
+
+        <label>
+          <term xml:id="modification" xml:lang="fr">Modification</term>
+          <term ref="#modification" xml:lang="it">Modificare</term>
+        </label>
+        <item>
+          <gloss target="#modification" xml:lang="it" source="https://www.treccani.it/vocabolario/modificare/">
+            <hi rend="bold">modificare </hi>
+            significa mutare in parte il modo di essere di qualche cosa,
+                 apportandovi cambiamenti nella forma o nella sostanza
+          </gloss>
+        </item>
+        <label>
+          <term xml:id="question" xml:lang="fr">Question</term>
+          <term ref="#question" xml:lang="it">Domanda</term>
+        </label>
+        <item>
+          <gloss target="#question" xml:lang="it" source="https://www.treccani.it/vocabolario/domanda/">
+               Il domandare; le parole con cui si esprime il desiderio di sapere qualcosa
+              </gloss>
+        </item>
+        <label>
+          <term xml:id="cause" xml:lang="fr">Cause</term>
+          <term ref="#cause" xml:lang="it">Causa</term>
+        </label>
+        <item>
+          <gloss target="#cause" xml:lang="it" source="https://www.treccani.it/vocabolario/causa/">
+            La
+            <hi rend="bold">causa </hi>
+            è un fatto o avvenimento che provoca un determinato effetto,
+                 che è origine o occasione di un altro fatto.
+          </gloss>
+        </item>
+        <label>
+          <term xml:id="prétérits" xml:lang="fr">Prétérits</term>
+          <term ref="#prétérits" xml:lang="it">Preteriti</term>
+        </label>
+        <item>
+          <gloss target="#prétérits" xml:lang="it" source="https://www.treccani.it/vocabolario/preterire/">
+            <hi rend="bold">preterire </hi>
+            significa tralasciare, omettere, passare sotto silenzio
+          </gloss>
+        </item>
+        <label>
+          <term xml:id="flexion" xml:lang="fr">Flexion</term>
+          <term ref="#flexion" xml:lang="it">Piegarsi</term>
+        </label>
+        <item>
+          <gloss target="#flexion" xml:lang="it" source="https://www.treccani.it/vocabolario/ricerca/piegarsi/">
+            <hi rend="bold">Piegarsi </hi>
+            significa agire su un oggetto,
+                 su un corpo di forma piana o rettilinea, in modo che assuma forma diversa
+          </gloss>
+        </item>
+
+        <label>
+          <term xml:id="simples" xml:lang="fr">Simples</term>
+          <term ref="#simples" xml:lang="it">Semplice</term>
+        </label>
+        <item>
+          <gloss target="#simples" xml:lang="it" source="https://www.treccani.it/vocabolario/semplice1/">
+            <hi rend="bold">Semplice </hi>
+            significa che è costituito di un solo elemento
+                 e non può risolversi perciò in ulteriori componenti.
+          </gloss>
+        </item>
+        <label>
+          <term xml:id="logiques" xml:lang="fr">Logiques</term>
+          <term ref="#logiques" xml:lang="it">Logica</term>
+        </label>
+        <item>
+          <gloss target="#logiques" xml:lang="it" source="https://it.wikipedia.org/wiki/Logica">
+            La
+            <hi rend="bold">logica </hi>
+            significa  è lo studio del ragionamento e dell'argomentazione,
+                rivolto in particolare a definire la correttezza dei procedimenti inferenziali del pensiero.
+          </gloss>
+        </item>
+        <label>
+          <term xml:id="historiquement" xml:lang="fr">Historiquement</term>
+          <term ref="#historiquement" xml:lang="it">Storicamente</term>
+        </label>
+        <item>
+          <gloss target="#historiquement" xml:lang="it" source="https://dizionari.repubblica.it/Italiano/S/storicamente.html">
+            <hi rend="bold">storicamente </hi>
+            significa sotto l'aspetto storico.
+          </gloss>
+        </item>
+        <!-- terminologia pag 12-->
+        <label>
+          <term xml:id="nécessairement" xml:lang="fr">Nécessairement</term>
+          <term ref="#nécessairement" xml:lang="it">Necessariamente</term>
+        </label>
+        <item>
+          <gloss target="#nécessairement" xml:lang="it" source="https://www.treccani.it/vocabolario/necessario/">
+            Il termine
+            <hi rend="blod"> necessariamente </hi>
+            indica qualcosa che è per necessità; raro con uso assol., di enti, cose o fatti che non possono essere altrimenti da come sono
+          </gloss>
+        </item>
+
+        <label>
+          <term xml:id="idée" xml:lang="fr">Idée</term>
+          <term ref="#idée" xml:lang="it">Idea</term>
+        </label>
+        <item>
+          <gloss target="#idée" xml:lang="it" source="https://www.treccani.it/vocabolario/idea/">
+            Il termine
+            <hi rend="blod">idea</hi>
+            Nel significato più ampio e generico, ogni singolo contenuto del pensiero, ogni entità mentale, e più in particolare la rappresentazione di un oggetto alla mente, la nozione che la mente si forma o riceve di una cosa reale o immaginaria
+          </gloss>
+        </item>
+
+        <label>
+          <term xml:id="phénomène" xml:lang="fr">Phénomène</term>
+          <term ref="#phénomène" xml:lang="it">Fenomeno</term>
+        </label>
+        <item>
+          <gloss target="#phénomène" xml:lang="it" source="https://www.treccani.it/vocabolario/fenomeno/">
+            Il termine
+            <hi rend="blod">fenomeno</hi>
+            In filosofia, ciò che appare, che è conoscibile attraverso i sensi, e che può non corrispondere alla realtà oggettiva;
+            Nel linguaggio scientifico, il termine è genericamente usato come sinonimo di evento; più precisamente, sono fenomeni i fatti, gli eventi provocati o spontanei, ma comunque suscettibili di osservazione e di studio:
+          </gloss>
+        </item>
+
+        <label>
+          <term xml:id="formes" xml:lang="fr">Formes</term>
+          <term ref="#formes" xml:lang="it">Forme</term>
+        </label>
+        <item>
+          <gloss target="#formes" xml:lang="it" source="https://www.treccani.it/vocabolario/forma/">
+            Il termine
+            <hi rend="blod">forma</hi>
+            indica l’aspetto esteriore con cui si presenta ogni oggetto, concreto o fantastico che sia
+          </gloss>
+        </item>
+
+        <label>
+          <term xml:id="transformations" xml:lang="fr">Transformations</term>
+          <term ref="#transformations" xml:lang="it">Trasformazioni</term>
+        </label>
+        <item>
+          <gloss target="#transformations" xml:lang="it" source="https://www.treccani.it/vocabolario/trasformazione/">
+            Il termine
+            <hi rend="blod">trasformazione</hi>
+            indica L’atto, l’azione o l’operazione di trasformare, il fatto di trasformarsi o di venire trasformato, che comporta un cambiamento, per lo più profondo e definitivo, di forma, aspetto, strutture o di altre qualità e caratteristiche
+          </gloss>
+        </item>
+
+
+        <label>
+          <term xml:id="linguistiques" xml:lang="fr">Linguistiques</term>
+          <term ref="#linguistiques" xml:lang="it">Linguistiche</term>
+        </label>
+        <item>
+          <gloss target="#linguistiques" xml:lang="it" source="https://www.treccani.it/vocabolario/linguistica/">
+            Il termine
+            <hi rend="blod">linguistica</hi>
+            indica la scienza che studia sistematicamente il linguaggio umano nella totalità delle sue manifestazioni, e quindi le lingue come istituti storici e sociali, la loro ripartizione, i loro reciproci rapporti, nonché la funzionalità delle singole lingue sotto differenti aspetti (fonetico, sintattico, lessicale, semantico), sia nella struttura con cui si presentano in un determinato momento della loro storia sia nella loro evoluzione attraverso il tempo; è termine oggi più comune che glottologia, che tuttavia si conserva come denominazione corrente della materia nell’ordinamento universitario italiano (ma con sign. più ristretto, indicando soprattutto lo studio storico-comparativo delle lingue indoeuropee)
+          </gloss>
+        </item>
+
+        <label>
+          <term xml:id="phonétique" xml:lang="fr">Phonétique</term>
+          <term ref="#phonétique" xml:lang="it">Fonetica</term>
+        </label>
+        <item>
+          <gloss target="#phonétique" xml:lang="it" source="https://www.treccani.it/vocabolario/fonetica/">
+            Il termine
+            <hi rend="blod">fonetica</hi>
+            nella linguistica tradizionale, indica il ramo della scienza linguistica che studia i fonemi, o suoni articolati dall’apparato di fonazione umano;
+              nella linguistica moderna, il termine indica più in particolare la descrizione fisico-naturalistica della fonazione umana e dei suoi prodotti.
+          </gloss>
+        </item>
+
+        <label>
+          <term xml:id="mouvement" xml:lang="fr">Mouvement</term>
+          <term ref="#mouvement" xml:lang="it">Movimento</term>
+        </label>
+        <item>
+          <gloss target="#mouvement" xml:lang="it" source="https://www.treccani.it/vocabolario/movimento/">
+            Il termine
+            <hi rend="blod">movimento</hi>
+            indica L’azione del muovere o del muoversi
+          </gloss>
+        </item>
+
+        <label>
+          <term xml:id="langues" xml:lang="fr">Langues</term>
+          <term ref="#langues" xml:lang="it">Lingue</term>
+        </label>
+        <item>
+          <gloss target="#langues" xml:lang="it" source="https://www.treccani.it/vocabolario/lingua/">
+            Il termine
+            <hi rend="blod">lingua</hi>
+            indica un sistema di suoni articolati distintivi e significanti (fonemi), di elementi lessicali, cioè parole e locuzioni (lessemi e sintagmi), e di forme grammaticali (morfemi), accettato e usato da una comunità etnica, politica o culturale come mezzo di comunicazione per l’espressione e lo scambio di pensieri e sentimenti, con caratteri tali da costituire un organismo storicamente determinato, con proprie leggi fonetiche, morfologiche e sintattiche
+          </gloss>
+        </item>
+
+        <label>
+          <term xml:id="mouillé" xml:lang="fr">Mouillé</term>
+          <term ref="#mouillé" xml:lang="it">Bagnato</term>
+        </label>
+        <item>
+          <gloss target="#mouillé" xml:lang="it" source="https://www.treccani.it/vocabolario/bagnato/">
+            Il termine
+            <hi rend="blod">bagnato</hi>
+            significa umido, o coperto, o inzuppato d’acqua o d’altro liquido
+          </gloss>
+        </item>
+
+        <label>
+          <term xml:id="Caractère" xml:lang="fr">Caractère</term>
+          <term ref="#Caractère" xml:lang="it">Carattere</term>
+        </label>
+        <item>
+          <gloss target="#Caractère" xml:lang="it" source="https://www.treccani.it/vocabolario/carattere/">
+            Il termine
+            <hi rend="blod">carattere</hi>
+            indica un segno tracciato, impresso o inciso, a cui si dia un significato
+          </gloss>
+        </item>
+
+        <label>
+          <term xml:id="capital" xml:lang="fr">Capital</term>
+          <term ref="#capital" xml:lang="it">Capitale</term>
+        </label>
+        <item>
+          <gloss target="#capital" xml:lang="it" source="https://www.treccani.it/vocabolario/capitale1/">
+            Il termine
+            <hi rend="blod">capitale</hi>
+            significa  principale, fondamentale, essenziale
+          </gloss>
+        </item>
+
+        <label>
+          <term xml:id="aveuglément" xml:lang="fr">Aveuglément</term>
+          <term ref="#aveuglément" xml:lang="it">Ciecamente</term>
+        </label>
+        <item>
+          <gloss target="#aveuglément" xml:lang="it" source="https://www.treccani.it/vocabolario/cieco/">
+            Il termine
+            <hi rend="blod">ciecamente</hi>
+            significa alla cieca, senza veder nulla
+          </gloss>
+        </item>
+
+        <label>
+          <term xml:id="langue" xml:lang="fr">Langue</term>
+          <term ref="#langue" xml:lang="it">Lingua</term>
+        </label>
+        <item>
+          <gloss target="#langue" xml:lang="it" source="https://www.treccani.it/vocabolario/lingua/">
+            Il termine
+            <hi rend="blod">lingua</hi>
+            indica un sistema di suoni articolati distintivi e significanti (fonemi), di elementi lessicali, cioè parole e locuzioni (lessemi e sintagmi), e di forme grammaticali (morfemi), accettato e usato da una comunità etnica, politica o culturale come mezzo di comunicazione per l’espressione e lo scambio di pensieri e sentimenti, con caratteri tali da costituire un organismo storicamente determinato, con proprie leggi fonetiche, morfologiche e sintattiche
+          </gloss>
+        </item>
+
+        <label>
+          <term xml:id="son" xml:lang="fr">Son</term>
+          <term ref="#son" xml:lang="it">Suo</term>
+        </label>
+        <item>
+          <gloss target="#son" xml:lang="it" source="https://www.treccani.it/vocabolario/suo/">
+            Il termine
+            <hi rend="blod">suo</hi>
+            è il possessivo corrispondente al pronome di terza persona
+          </gloss>
+        </item>
+
+        <label>
+          <term xml:id="conséquent" xml:lang="fr">Conséquent</term>
+          <term ref="#conséquent" xml:lang="it">Coseguente</term>
+        </label>
+        <item>
+          <gloss target="#conséquent" xml:lang="it" source="https://www.treccani.it/vocabolario/conseguente/">
+            Il termine
+            <hi rend="blod">conseguente</hi>
+            indica qualcosa che segue a qualche cosa o ne deriva
+          </gloss>
+        </item>
+
+        <label>
+          <term xml:id="régularité" xml:lang="fr">Régularité</term>
+          <term ref="#régularité" xml:lang="it">Regolarità</term>
+        </label>
+        <item>
+          <gloss target="#régularité" xml:lang="it" source="https://www.treccani.it/vocabolario/regolarita/">
+            Il termine
+            <hi rend="blod">regolarità</hi>
+            indica l’essere regolare, la condizione e la qualità di ciò che è regolare
+          </gloss>
+        </item>
+
+        <label>
+          <term xml:id="mathématique" xml:lang="fr">Mathématique</term>
+          <term ref="#mathématique" xml:lang="it">Matematico</term>
+        </label>
+        <item>
+          <gloss target="#mathématique" xml:lang="it" source="https://www.treccani.it/vocabolario/matematico/">
+            Il termine
+            <hi rend="blod">matematico</hi>
+            indica qualcosa che ha il carattere di obbiettiva, limpida e conseguente precisione, propria del calcolo matematico
+          </gloss>
+        </item>
+
+        <label>
+          <term xml:id="mot" xml:lang="fr">Mot</term>
+          <term ref="#mot" xml:lang="it">Parola</term>
+        </label>
+        <item>
+          <gloss target="#mot" xml:lang="it" source="https://www.treccani.it/vocabolario/parola/">
+            Il termine
+            <hi rend="blod">parola</hi>
+            indica il complesso di fonemi, cioè di suoni articolati, o anche singolo fonema (e la relativa trascrizione in segni grafici), mediante i quali l’uomo esprime una nozione generica, che si precisa e determina nel contesto di una frase
+          </gloss>
+        </item>
+
+        <label>
+          <term xml:id="analogie" xml:lang="fr">Analogie</term>
+          <term ref="#analogie" xml:lang="it">Analogia</term>
+        </label>
+        <item>
+          <gloss target="#analogie" xml:lang="it" source="https://www.treccani.it/vocabolario/analogia/">
+            Il termine
+            <hi rend="blod">analogia</hi>
+            indica il rapporto di somiglianza tra due oggetti, tale che dall’eguaglianza o somiglianza constatata tra alcuni elementi di tali oggetti si possa dedurre l’eguaglianza o somiglianza anche di tutti gli altri loro elementi
+          </gloss>
+        </item>
+      </list>
+      <!--riferimenti bibliografici-->
+      <listBibl>
+        <bibl xml:lang="fr">
+          <title>Cahiers Ferdinand de Saussure</title>
+          <author>
+            <persName>
+              <forename>Alessandro</forename>
+              <surname>Chidichimo</surname>
+            </persName>
+          </author>
+          <pubPlace>
+            <placeName ref="#GE">Ginevra</placeName>
+          </pubPlace>
+          <publisher>Librairie Droz</publisher>
+          <date when="2009">2009</date>
+        </bibl>
+
+        <bibl xml:lang="it">
+          <title type="main">Corso di linguistica generale</title>
+          <title type="sub">introduzione, traduzione e commento di Tullio De Mauro</title>
+
+          <author>
+            <persName ref="#FDS">
+              <forename>Ferdinand</forename>
+              <surname>De Saussure</surname>
+            </persName>
+          </author>
+          <author>
+            <persName>
+              <forename>Tullio</forename>
+              <surname>De Mauro</surname>
+            </persName>
+          </author>
+          <pubPlace>
+            <placeName ref="#RM">Roma</placeName>
+          </pubPlace>
+          <pubPlace>
+            <placeName ref="#BA">Bari</placeName>
+          </pubPlace>
+          <publisher>Laterza editore</publisher>
+          <date when="1976">1976</date>
+        </bibl>
+
+        <bibl xml:lang="it">
+          <title type="main">Lingua e mente sociale</title>
+          <title type="sub">Per una teoria delle istituzioni linguistiche a partire da Saussure e Mead</title>
+          <author>
+            <persName xml:id="EF">
+              <forename>Emanuele</forename>
+              <surname>Fadda</surname>
+            </persName>
+          </author>
+          <pubPlace>
+            <placeName ref="#AR">Acireale</placeName>
+          </pubPlace>
+          <publisher>Bonanno Editore</publisher>
+          <date when="2006">2006</date>
+        </bibl>
+
+        <bibl xml:lang="fr">
+          <title>Écrits de linguistique générale</title>
+          <author>
+            <persName ref="#FDS">
+              <forename>Ferdinand</forename>
+              <surname>de Saussure</surname>
+            </persName>
+          </author>
+          <author>
+            <persName xml:id="SB">
+              <forename>Simon</forename>
+              <surname>Bouquet</surname>
+            </persName>
+          </author>
+          <author>
+            <persName xml:id="RE">
+              <forename>Rudolf</forename>
+              <surname>Engler</surname>
+            </persName>
+          </author>
+          <pubPlace>
+            <placeName ref="#PA">Paris</placeName>
+          </pubPlace>
+          <publisher>Gallimard</publisher>
+          <date when="2002">2002</date>
+        </bibl>
+      </listBibl>
+    </back>
+  </text>
+</TEI>
